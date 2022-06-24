@@ -15,9 +15,9 @@ import java.util.List;
 @Controller
 @RequestMapping("/student")
 public class StudentController {
-    // setter injection: cách triển khai ngắn gọn, hay dùng
+    // field injection
     @Autowired
-//    @Qualifier("studentServiceImpl")
+    //    @Qualifier("studentServiceImpl")
     private StudentService service;
     // triển khai setter injection đầy đủ
 //    @Autowired

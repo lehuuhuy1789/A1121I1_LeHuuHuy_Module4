@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class DictionaryController {
 
-        @GetMapping("/dictionary")
+    @GetMapping("/dictionary")
     public String dictionary(){
         return "index";
     }
@@ -19,9 +19,8 @@ public class DictionaryController {
     @PostMapping("/dictionary")
     public String vocabulary(@RequestParam(value = "dictionary")String vocabulary, Model model){
         switch (vocabulary){
-
             case "red":
-                model.addAttribute("vocabulary","Do");
+                model.addAttribute("dictionary","Do");
                 break;
             case "yellow":
                 model.addAttribute("vocabulary","Vang");
